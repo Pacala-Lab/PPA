@@ -27,4 +27,5 @@ Imports:
     ggplot2,
     gridExtra,
     grid,
+    gtable,
     mgcv
