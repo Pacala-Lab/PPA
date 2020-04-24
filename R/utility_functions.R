@@ -90,7 +90,7 @@ calc.A <- function(allometry, n.crown.class = 2, spp) {
   out[, "A_c"] <- as.numeric((allometry["V", spp] / allometry["k", spp]) * (1 + log((allometry["a_f", spp] * allometry["L_0", spp])/allometry["V", spp]) - ((allometry["a_f", spp] * allometry["L_0", spp]) / allometry["V", spp]) * exp(-allometry["k", spp] * allometry["l_c", spp])))
 
   if(n.crown.class == 2) {
-    out[, "A_u"] <- as.numeric((allometry["a_f", spp] * L_u) / allometry["V", spp] * exp(-allometry["k", spp] * allometry["l_u", spp]))
+    out[, "A_u"] <- as.numeric((allometry["a_f", spp] * L_u) / allometry["k", spp] * (1 - exp(-allometry["k", spp] * allometry["l_u", spp])))
   }
   if(n.crown.class > 2) {
     print("error: only 2 crown classes currently supported.")
