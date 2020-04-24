@@ -142,6 +142,16 @@ plot.model_clonal <- function() {
 }
 
 
+## --------------------- INDEXING. METHODS --------------------------
+
+## define indexing method for allometry class.
+"[.allometry" <- function(x, i, j) {
+
+  output <- x$allometry[i, j]
+  return(output)
+  
+}
+
 
 ## --------------------- ALLOMETRY. METHODS --------------------------
 
