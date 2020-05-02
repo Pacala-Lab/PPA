@@ -1,0 +1,31 @@
+Package: PPA
+Title: Modeling Plant Dynamics With The Perfect Plasticity Approximation
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Jacob",
+           family = "Levine",
+           role = c("aut", "cre"),
+           email = "jacoblevine@princeton.edu"),
+    person(given = "Aiyu",
+           family = "Zheng",
+           role = "aut",
+           email = "aiyuz@princeton.edu"),
+    person(given = "Hannes",
+           family = "De Deurwaerder",
+           role = "aut",
+           email = "hannesd@princeton.edu"),
+    person(given = "Marco",
+           family = "Visser",
+           role = "aut",
+           email = "mvisser@princeton.edu"))
+Description: Implementation of the Perfect Plasticity Approximation for light competition in plants. Models are predictive, and we include extensions
+    for clonal plants, annual plants and lianas. Water competition will soon be incorporated as well.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ggplot2,
+    gridExtra,
+    grid,
+    gtable,
+    mgcv
